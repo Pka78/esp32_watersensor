@@ -82,8 +82,8 @@ void setup() {
     digitalWrite(LED, LOW);   // LED off
 
     pinMode(SENS, INPUT);
-    analogSetCycles(255);
-    analogSetSamples(1);
+    analogSetWidth(12);
+    analogSetAttenuation(ADC_0db);
     analogReadResolution(12);
     
     Serial.begin(115200);
